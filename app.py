@@ -7,7 +7,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 # 日本語フォント設定（Mac標準）
-matplotlib.rcParams['font.family'] = 'Hiragino Sans'
+matplotlib.rcParams['font.family'] = 'IPAexGothic'
 
 # ==========================
 # ユーティリティ
@@ -105,7 +105,7 @@ col_left, col_right = st.columns([1, 1])  # 必要なら [1, 2] や [2, 3] に�
 with col_left:
     st.subheader("操作")
     with st.form("many_form", clear_on_submit=False):
-        n = st.number_input("回数", min_value=1, max_value=100000, value=100, step=1)
+        n = st.number_input("回数", min_value=1, max_value=100000, value=100, step=10)
         submitted = st.form_submit_button("振る", use_container_width=True)
 
     if submitted:
