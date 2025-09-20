@@ -7,7 +7,6 @@ import matplotlib
 import matplotlib.pyplot as plt
 import japanize_matplotlib  # 日本語フォントを自動設定
 
-
 # ==========================
 # ユーティリティ
 # ==========================
