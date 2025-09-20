@@ -5,9 +5,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
+import japanize_matplotlib  # 日本語フォントを自動設定
 
-# 日本語フォント設定（Mac標準）
-matplotlib.rcParams['font.family'] = 'IPAexGothic'
 
 # ==========================
 # ユーティリティ
