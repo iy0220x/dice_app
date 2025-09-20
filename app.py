@@ -5,7 +5,11 @@ import streamlit as st
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
-import japanize_matplotlib  # 日本語フォントを自動設定
+from matplotlib import font_manager
+
+# リポジトリ同梱フォントを登録＆使用
+font_manager.fontManager.addfont("fonts/KosugiMaru-Regular.ttf")
+matplotlib.rcParams["font.family"] = "Kosugi Maru"
 
 # ==========================
 # ユーティリティ
