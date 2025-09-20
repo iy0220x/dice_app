@@ -163,7 +163,7 @@ with col_right:
             plt.tight_layout()
             st.pyplot(fig, use_container_width=True)
 
-        plot_bar_compact(df_now, "集計（今回の試行）")
+        plot_bar_compact(df_now, "集計")
 
 st.divider()
 
