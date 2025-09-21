@@ -177,12 +177,12 @@ with st.expander("管理用", expanded=False):
         auth_ok = (pwd == ADMIN_PASSWORD)
     else:
         # パスワード未設定の場合は、ローカル利用前提で自分だけが触れる想定
-        st.caption("※ ADMIN_PASSWORD が未設定のため、ローカル授業用の簡易モードです。")
+        st.caption("※ ADMIN_PASSWORD が未設定のため、簡易モードです。")
         auth_ok = True
 
     if auth_ok:
         st.markdown("#### 重み")
-        mode = st.radio("設定方法", ["スライダーで設定", "直接入力（カンマ区切り）"], horizontal=True)
+        mode = st.radio("設定方法", ["スライダーで設定", "直接入力"], horizontal=True)
 
         if mode == "スライダーで設定":
             w1 = st.slider("1 の重み", 0.01, 10.0, float(st.session_state.weights[0]))
